@@ -1,0 +1,5 @@
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructuringAndAccess.csproj.AssemblyReference.cache
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructuringAndAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructuringAndAccess.AssemblyInfoInputs.cache
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructuringAndAccess.AssemblyInfo.cs
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructuringAndAccess.csproj.CoreCompileInputs.cache

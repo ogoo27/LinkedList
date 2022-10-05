@@ -1,0 +1,15 @@
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructureAndAccess.csproj.AssemblyReference.cache
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructureAndAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructureAndAccess.AssemblyInfoInputs.cache
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructureAndAccess.AssemblyInfo.cs
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructureAndAccess.csproj.CoreCompileInputs.cache
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\bin\Debug\net6.0\DataStructureAndAccess.exe
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\bin\Debug\net6.0\DataStructureAndAccess.deps.json
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\bin\Debug\net6.0\DataStructureAndAccess.runtimeconfig.json
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\bin\Debug\net6.0\DataStructureAndAccess.dll
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\bin\Debug\net6.0\DataStructureAndAccess.pdb
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructureAndAccess.dll
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\refint\DataStructureAndAccess.dll
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructureAndAccess.pdb
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\DataStructureAndAccess.genruntimeconfig.cache
+C:\Users\MIMI\source\repos\DataStructuringAndAccess\DataStructuringAndAccess\obj\Debug\net6.0\ref\DataStructureAndAccess.dll
