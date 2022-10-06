@@ -6,163 +6,105 @@ using System.Text;
 using System.Threading.Tasks;
 using DataStructureAndAccess;
 using System.Collections;
+using System.Diagnostics.Metrics;
 
 namespace DataStructureAndAccess
 {
-   // public Node<T> singlyLinkedList = new Node<T>();
+
     class SinglyLinkedLists<T>
     {
 
 
-        
 
 
 
-         Node<T> head;
 
-         //Node<T> previous;
+        Node<T> head;
+        public SinglyLinkedLists()
+        {
+            head = null;
+        }
 
-         Node<T> current;
-
-         int count = 0;
-
-
+        int count = 0;
 
 
         public void Add(T item)
 
         {
-
             Node<T> newNode = new Node<T>(item);
+            count++;
 
             if (head == null)
 
             {
-
                 head = newNode;
-
             }
 
             else
 
             {
+                Node<T> temp = head;
 
-                current = head;
-
-                while (current.next != null)
+                while (temp.next != null)
 
                 {
 
-                    current = current.next;
+                    temp = temp.next;
 
                 }
 
+                temp.next = newNode;
 
-
-                current.next = newNode;
+                newNode.next = null;
 
             }
 
-            count++;
 
         }
 
 
 
         public bool Remove(T item)
-
         {
+            Node<T> temp = head;
 
-            Node<T> nodeToRemove = new Node<T>(item);
-
-            current = head;
-
-            if (head.data.Equals(nodeToRemove.data))
-
+            while (temp.next != null)
             {
-
-                current = head.next;
-
-                head = current;
-
-                return true;
-
-            }
-
-            else
-
-            {
-
-                while (current != null)
-
+                if (temp.next.data.Equals(item))
                 {
+                    temp.next = temp.next.next; return true;
 
-                    if (current.data.Equals(nodeToRemove.data))
-
-                    {
-
-                        head.next = current.next;
-
-                        current = head;
-
-                        return true;
-
-                    }
-
-                    else
-
-                    {
-
-                        head = current;
-
-                        current = current.next;
-
-                    }
-
+                    count--;
                 }
-
+                else
+                {
+                    temp = temp.next;
+                }
             }
-
-            count--;
-
             return false;
 
-        }
+
+
+        } 
 
 
 
 
 
-        public bool Check(T data)
-
+        public bool Check(T item)
         {
+            Node<T> temp = head;
 
-            var existingNode = new Node<T>(data);
-
-
-
-            var current = head;
-
-
-
-            while (current != null)
-
+            while (temp.next != null)
             {
-
-                if (current.data.Equals(existingNode.data))
-
+                if (temp.next.data.Equals(item))
                 {
-
-
-
                     return true;
-
                 }
-
-
-
-                current = current.next;
-
+                else
+                {
+                    temp = temp.next;
+                }
             }
             return false;
 
@@ -172,57 +114,38 @@ namespace DataStructureAndAccess
 
 
 
-        public int Index(T data)
-
+        public int Index(T item)
         {
-
-            var existingNode = new Node<T>(data);
-
-            var current = head;
+            var temp = head;
 
             int index = 0;
 
-
-
-            while (current != null)
-
+            while(temp.next != null)
             {
-
-                if (current.data.Equals(existingNode.data))
-
+                if(temp.data.Equals(item))
                 {
-
                     return index;
-
                 }
-
                 index++;
 
-                current = current.next;
-
+                temp = temp.next;
             }
-
-
-
             return -1;
 
         }
 
 
 
-        public void PrintLinkedList()
-
+        public void PrintList()
         {
+            var temp = head;
 
-            var current = head;
-
-            while (current != null)
+            while (temp != null)
 
             {
+                Console.WriteLine(temp.data);
 
-                Console.WriteLine(current.data);
-
-                current = current.next;
+                temp = temp.next;
 
 
             }

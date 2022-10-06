@@ -9,8 +9,7 @@ namespace DataStructureAndAccess
 
     class Node<T>
 
-    {
-
+    { 
       // fields
         public T data;
 

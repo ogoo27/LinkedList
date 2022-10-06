@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace DataStructureAndAccess
 {
-      // sub class and super class
      class Queue<T> 
     {
         //fields
         Node<T> head;
-        T data;
+
         int count = 0;
 
         public bool IsEmpty()
@@ -23,41 +22,63 @@ namespace DataStructureAndAccess
 
         public void Enqueue(T item)
         {
-            if(head == null)
-            {
-                head = new Node<T>(item);
-                count++;
-            }
-            Node<T> node = head;
+            Node<T> newNode = new Node<T>(item);
 
-            while(node.next != null)
-            {
-                node = node.next;
-
-            }
-            node = new Node<T>(item);
             count++;
+
+            if (head == null)
+
+            {
+                head = newNode;
+
+            }
+
+            else
+
+            {
+                var temp = head;
+
+                while (temp.next != null)
+
+                {
+
+                    temp = temp.next;
+
+                }
+
+                temp.next = newNode;
+
+                newNode.next = null;
+
+            }
+
 
         }
 
 
-        public void Dequeue()
+           
+
+        public T Dequeue()
         {
          if (IsEmpty())
-            {
-                return;
-            }
+         {
+                throw new InvalidOperationException("queue is empty");
+         }
 
          if (head.next == null)
-            {
+         {
                 head = null;
-                count--;
-            }
-            Node<T> node =head.next;
-            head = node;
-            count--;
 
+                count--;
+         }
+            var temp = head;
+
+            head = head.next;
+            count--;
+            return temp.data;
         } 
+
+
 
 
         public int Size()

@@ -39,11 +39,11 @@ namespace DataStructureAndAccess
         }
 
 
-        public void Pop()
+        public T Pop()
         {
             if (IsEmpty())
             {
-                return;
+                throw new InvalidOperationException("stack is empty");
             }
 
             if (head.next == null)
@@ -51,30 +51,48 @@ namespace DataStructureAndAccess
                 head = null;
                 count--;
             }
-            Node<T> node = head.next;
-            head = node;
+            var temp = head;
+            head = head.next;
             count--;
-
+            return temp.data;
         }
 
 
         public T Peek()
         {
-            Node<T> node = head;
-            while (node.next != null)
-            {   
-                node = node.next;
+            Node<T> tempNode = head;
+            while (tempNode.next != null)
+            {
+                tempNode = tempNode.next;
             }
-            return node.data;
+            return tempNode.data;
         }
-
-
-
 
         public int Size()
         {
             return count;
         }
 
+
+        public void PrintStack()
+        {
+            Node<T> temp = head;
+            while (temp.next != null)
+            {
+                Console.WriteLine(temp.data);
+                temp = temp.next;
+            }
+        }
+
+
     }
+
+
+  
+
+
+
+
+       
+ 
 }
