@@ -5,12 +5,12 @@ using System.Collections;
 using System.Collections.Generic;
 using DataStructureAndAccess;
 
-var list = new DataStructureAndAccess.Queue<int>();
-list.Enqueue(1);
-list.Enqueue(2);
-list.Enqueue(3);
+var list = new DataStructureAndAccess.Stack<int>();
+ list.Push(1);
+ list.Push(2);
+ list.Push(3);
 //list.Dequeue();
-Console.WriteLine(list.Dequeue());
+Console.WriteLine(list.Peek());
 //list.Pop();
 
 //list.PrintList();

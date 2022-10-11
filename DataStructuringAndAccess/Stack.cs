@@ -58,13 +58,15 @@ namespace DataStructureAndAccess
         }
 
 
-        public T Peek()
+        public  T Peek()
         {
+            
             Node<T> tempNode = head;
             while (tempNode.next != null)
             {
                 tempNode = tempNode.next;
             }
+            
             return tempNode.data;
         }
 
